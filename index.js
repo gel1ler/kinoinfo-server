@@ -13,6 +13,7 @@ app.get('/find', async (req, res) => {
     let name = req.query.name
     name = decodeURI(name)
     try {
+        
         const response = await fetch(`https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword?keyword=${name}`, {
             headers: {
                 'X-API-KEY': '4b403f23-526e-4a28-8173-2c724b350b9a',
