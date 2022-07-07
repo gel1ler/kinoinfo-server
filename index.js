@@ -6,7 +6,7 @@ const app = express()
 app.use(cors())
 
 app.get('/', (req, res) => {
-    res.status(200).json({ message: 'It\'s working' })
+    return res.status(200).json({ message: 'It\'s working' })
 })
 
 app.get('/find', async (req, res) => {
